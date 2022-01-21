@@ -22,7 +22,7 @@ API desenvoldida para funcionar como um sistema de gestão integrada utilizando 
      <li> NPM</li>
      <li> Nodemon</li>
      <li> Express</li>
-     <li> Sequelize -  Para instalá-lo, pelo terminal: 1. "<b>npm i sequelize</b>"; seguido do comando: 2. "<b>npm i mysql2</b>" <b>(para o projeto em questão)</b></li>
+     <li> Sequelize -  Para instalá-lo, pelo terminal: 1. "<b>npm install --save sequelize</b>"; seguido do comando: 2. "<b>npm install --save mysql2</b>" <b>(para o projeto em questão)</b></li>
     </ul>
  </div>
  
