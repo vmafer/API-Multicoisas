@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "468cd0f8-4360-42e3-b406-ac90d58ca7f8",
+		"name": "Multicoisas Testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createCategorias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Codigo\": 10,\r\n    \"Nome\": \"MAT. ESCRITORIO\",\r\n    \"DataCriacao\":\"2022-01-19 10:10:10\",\r\n    \"DataModificacao\":\"2022-01-20 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Categoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategorias",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"Codigo\": 5,\r\n    \"Nome\": \"MATERIAIS ESCRITORIO\",\r\n    \"DataCriacao\":\"2022-01-20 10:10:10\",\r\n    \"DataModificacao\":\"2022-01-20 10:15:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Categoria/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Categoria",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProdutos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Codigo\": 50,\r\n    \"Nome\": \"CANETA\",\r\n    \"Descricao\": \"CANETA BIC AZUL\",\r\n    \"CategoriaID\": 1,\r\n    \"DataCriacao\":\"2022-01-20 10:10:10\",\r\n    \"DataModificacao\":\"2022-01-20 10:15:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Produto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProdutos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Produto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProdutos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"Codigo\": 50,\r\n        \"Nome\": \"CANETA\",\r\n        \"Descricao\": \"CANETA ESFEROGRAFICA BIC AZUL\",\r\n        \"CategoriaID\": 1,\r\n        \"DataCriacao\": \"2022-01-20T13:10:10.000Z\",\r\n        \"DataModificacao\": \"2022-01-20T13:15:00.000Z\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Produto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProdutos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"Codigo\": 50,\r\n    \"Nome\": \"PANELA INOX\",\r\n    \"Descricao\": \"PANELA INOX VERMELHA TRAMONTINA\",\r\n    \"CategoriaID\": 6,\r\n    \"DataCriacao\": \"2022-01-19T13:10:10.000Z\",\r\n    \"DataModificacao\": \"2022-01-20T13:15:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Produto/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Produto",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProdutos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Codigo\": 30,\r\n    \"Nome\": \"CADEIRA ESCRITORIO\",\r\n    \"Descricao\": \"CADEIRA COURO P/ ESCRITORIO\",\r\n    \"CategoriaID\": 1,\r\n    \"DataCriacao\":\"2022-01-20 10:10:10\",\r\n    \"DataModificacao\":\"2022-01-20 10:15:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Produto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEstoques",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProdutoId\": 3,\r\n    \"Quantidade\": 500,\r\n    \"Preco\": 50.60,\r\n    \"DataCriacao\":\"2022-01-19 10:10:10\",\r\n    \"DataModificacao\":\"2022-01-20 10:15:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Estoque",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Estoque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEstoques",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Estoque",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Estoque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEstoques",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"ProdutoId\": 3,\r\n    \"Quantidade\": 600,\r\n    \"Preco\": \"70.00\",\r\n    \"DataCriacao\": \"2022-01-19T13:10:10.000Z\",\r\n    \"DataModificacao\": \"2022-01-20T13:15:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Estoque/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Estoque",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createClientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"Codigo\":7,\r\n    \"Nome\":\"FernandoVilela\",\r\n    \"DataNascimento\": \"1995-05-17\",\r\n    \"Email\": \"vilelafernando17@gmail.com\",\r\n    \"DataCriacao\":\"2022-01-19 10:10:10\",\r\n    \"DataModificacao\":\"2022-01-19 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClientes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"Codigo\": 7,\r\n    \"Nome\": \"FernandoAlbuquerque\",\r\n    \"DataNascimento\": \"1995-05-17\",\r\n    \"Email\": \"vilelafernando17@gmail.com\",\r\n    \"DataCriacao\": \"2022-01-19T13:10:10.000Z\"\r\n}        ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createVendas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Codigo\": 30,\r\n    \"Valor\": \"70.50\",\r\n    \"DataVenda\": \"2022-01-20\",\r\n    \"ClienteID\": 1,\r\n    \"DataCriacao\": \"2022-01-19 10:10:10\",\r\n    \"DataModificacao\": \"2022-01-19 10:10:10\"\r\n}        ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Venda",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Venda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllVendas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"Codigo\": 7,\r\n    \"Nome\": \"FernandoAlbuquerque\",\r\n    \"DataNascimento\": \"1995-05-17\",\r\n    \"Email\": \"vilelafernando17@gmail.com\",\r\n    \"DataCriacao\": \"2022-01-19T13:10:10.000Z\"\r\n}        ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Cliente/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateVendas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"Codigo\": 30,\r\n        \"Valor\": \"90.00\",\r\n        \"DataVenda\": \"2022-01-21\",\r\n        \"ClienteID\": 1,\r\n        \"DataCriacao\": \"2022-01-19T13:10:10.000Z\",\r\n        \"DataModificacao\": \"2022-01-19T13:10:10.000Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Venda/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Venda",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
