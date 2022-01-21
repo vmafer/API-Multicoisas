@@ -19,6 +19,7 @@ API desenvoldida para funcionar como um sistema de gestão integrada utilizando 
  <div> 
   <h3> Pacotes utilizados </h3>
    <ul>
+     <li> NPM</li>
      <li> Nodemon</li>
      <li> Express</li>
      <li> Sequelize</li>
